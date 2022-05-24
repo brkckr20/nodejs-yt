@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./inc/head")%>
+</head>
+
+<body>
+
+    <%- include("./inc/nav")%>
+        <section>
+            <form method="post" action="/admin/add">
+                <input type="text" name="title" placeholder="Baslik" required>
+                <input type="text" name="short" placeholder="Kisa aciklama" required>
+                <input type="text" name="long" placeholder="Uzun Aciklama" required>
+                <input type="submit" value="Kaydet">
+            </form>
+        </section>
+
+
+
+
+        <!-- değişken tanımlama -->
+        <!--  <% let name = "Burak" %>
+    <h1>about</h1> -->
+
+        <!-- tanımlanmış olan değişkeni kullanmak -->
+        <!-- <p><%= name %></p> -->
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+<nav>
+    <h1>Blog</h1>
+    <ul>
+        <li><a href="/">Anasayfa</a></li>
+        <li><a href="/about">Hakkımızda</a></li>
+        <% if(user) {%>
+            <li><a href="/logout">Cikis</a></li>
+            <% }else { %>
+                <li><a href="/logout">Giris</a></li>
+                <% } %>
+    </ul>
+</nav>
